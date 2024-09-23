@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="0.177" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Sample feature" name="Sample feature" time="0.014">
+<system-out><![CDATA[
+Given Sample testcase1......................................................passed
+And Sample testcase2........................................................passed
+]]></system-out>
+</testcase>
+</testsuite>

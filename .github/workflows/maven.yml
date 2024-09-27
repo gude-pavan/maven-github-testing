@@ -35,3 +35,11 @@ jobs:
       with:
         name: Package
         path: staging
+    - name: Publish Test Results
+      uses: EnricoMi/publish-unit-test-result-action/windows@v2
+      if: always()
+      with:
+        files: |
+          test-results\**\*.xml
+          test-results\**\*.trx
+          test-results\**\*.json

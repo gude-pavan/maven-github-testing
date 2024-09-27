@@ -11,10 +11,6 @@ Feature: Sample feature
     Given Sample testcase1
     And Sample testcase2
 
-@tag
-Feature: Sample feature2
-  I want to use this template for my feature file
-
   @tag2
   Scenario: Sample feature2
     Given Sample testcase1

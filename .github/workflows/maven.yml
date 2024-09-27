@@ -29,16 +29,9 @@ jobs:
         cache: maven
     - name: Build with Maven
       run: mvn -B package --file pom.xml
-    - run: mvn --batch-mode --update-snapshots verify
+    - run: mvn --batch-mode --update-snapshots clean verify
     - run: mkdir staging && cp target/*.jar staging
     - uses: actions/upload-artifact@v4
       with:
         name: Package
         path: staging
-    - name: Test Report
-      uses: dorny/test-reporter@v1
-      if: success() || failure()    # run this step even if previous step failed
-      with:
-        name: JEST Tests            # Name of the check run which will be created
-        path: target/*.json    # Path to test results
-        reporter: jest-junit        # Format of test results

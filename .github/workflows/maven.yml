@@ -40,4 +40,4 @@ jobs:
       if: always()
       with:
         files: |
-          target\*.xml
+          target/htmlreport.xml

@@ -10,3 +10,12 @@ Feature: Sample feature
   Scenario: Sample feature
     Given Sample testcase1
     And Sample testcase2
+
+@tag
+Feature: Sample feature2
+  I want to use this template for my feature file
+
+  @tag1
+  Scenario: Sample feature
+    Given Sample testcase1
+    And Sample testcase2 
